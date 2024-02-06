@@ -1,7 +1,6 @@
 import { redirect, type Actions, fail } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import {PrismaClient} from "@prisma/client"
-import { error } from 'console';
 
 const prisma = new PrismaClient();
 

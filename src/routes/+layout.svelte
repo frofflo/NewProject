@@ -5,6 +5,7 @@
     import '@fortawesome/fontawesome-free/css/all.css';
     import type { LayoutData } from './$types';
     import { invalidateAll } from '$app/navigation';
+    import { LightSwitch } from '@skeletonlabs/skeleton';
     
     export let data: LayoutData;
 
@@ -20,10 +21,13 @@
 
 <body class="">
     <ul bind:clientHeight={clientHeight} class="variant-glass-surface">
-        <li>
-          <div class="homePageLinkContainer">
-            <a class="homePageLink" href="/">Homepage</a>
-          </div>
+        <li class="flex flex-row items-center">
+            <div class="homePageLinkContainer">
+                <a class="homePageLink" href="/">Homepage</a>
+            </div>
+            <div>
+                <LightSwitch/>
+            </div>
         </li>
         <button class="hamburger-menu" on:click={toggleMenu}>
             <span class="line"></span>

@@ -3,11 +3,10 @@
   import type { PageData } from './$types';
   import { invalidateAll } from '$app/navigation';
   import { browser } from '$app/environment';
-  import { onDestroy, onMount } from 'svelte';
+  import { onDestroy } from 'svelte';
   import type { Action } from 'svelte/action';
 
   export let data: PageData;
-  export let form;
 
   $: pixelArt = data.pixelArt;
   let username = data.username;
@@ -18,7 +17,6 @@
   let pixelWidth = 0;
   let heightVar = 0;
   let widthVar = 0;
-  let colorPicker:HTMLInputElement;
 
 
   let element_updated: Action<HTMLElement, string> = (node, current_color) => {

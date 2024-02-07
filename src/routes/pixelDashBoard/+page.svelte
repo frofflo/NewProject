@@ -47,9 +47,9 @@
                 <label class="text-white mb-2" for="pixelartNameInput">Pixelart Name:</label>
                 <input class="input mb-2" type="text" name="pixelartName" bind:value={pixelartName}>
                 <label class="text-white mb-2" for="widthInput">Width: {width}</label>
-                <input class="input mb-2" type="range" name="width" min="8" max="32" bind:value={width}>
+                <input class="input mb-2" type="range" name="width" min="8" max="16" bind:value={width}>
                 <label class="text-white mb-2" for="heightInput">Height: {height}</label>
-                <input class="input mb-2" type="range" name="height" min="8" max="32" bind:value={height}>
+                <input class="input mb-2" type="range" name="height" min="8" max="16" bind:value={height}>
                 <button class="bg-blue-500 text-white px-4 py-2 rounded">Create pixelart</button>
                 {#if form?.pixelartName}
                     <span>{form.pixelartName}</span>

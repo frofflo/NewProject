@@ -7,6 +7,7 @@
   import type { Action } from 'svelte/action';
 
   export let data: PageData;
+  export let form;
 
   $: pixelArt = data.pixelArt;
   let username = data.username;

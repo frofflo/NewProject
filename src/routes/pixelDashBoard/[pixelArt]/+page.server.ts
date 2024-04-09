@@ -10,7 +10,7 @@ export const load = (async ({cookies, params}) => {
     if(!id){
         throw redirect(303, "/login")
     }
-    const pixelArtName = params.pixelArt;
+    const pixelArtName = params.pixelArt
     const pixelArt = await prisma.pixelArt.findFirst({
         where: {
             name: pixelArtName

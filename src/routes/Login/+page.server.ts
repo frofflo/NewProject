@@ -40,6 +40,10 @@ export const actions: Actions = {
     
             throw redirect(303, "/");
           } else {
+
+
+
+            
             return fail(400, { password: "Invalid password" });
           }  
         }

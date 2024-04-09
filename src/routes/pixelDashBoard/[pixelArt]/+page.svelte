@@ -36,7 +36,7 @@
   if (browser) {
     let interval: NodeJS.Timeout;
 
-    interval = setInterval(invalidateAll, 5000) ; null;
+    interval = setInterval(invalidateAll, 50) ; null;
 
     onDestroy(() => {
       clearInterval(interval);
